@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Main {
@@ -11,7 +12,6 @@ public class Main {
         list.add(3,30);
         System.out.println(list.size());
         list.removeLast();
-        System.out.println(list.contains(500));
         System.out.println(list);
     }
     }
