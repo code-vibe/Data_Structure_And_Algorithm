@@ -13,7 +13,13 @@ public class LinkedList {
     // addFirst
     // addLast
     public void addLast(int item) {
-        var node = new Node();
+        var node = new Node(item);
+        if (first == null) {
+            first = last = node;
+        }else {
+            last.next = node;
+            last = node;
+        }
 
     }
     // deleteFirst
