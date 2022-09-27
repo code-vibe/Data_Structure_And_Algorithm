@@ -9,6 +9,9 @@ public class Main {
         list.add(40);
         list.addFirst(500);
         list.add(3,30);
+        System.out.println(list.size());
+        list.removeLast();
+        System.out.println(list.contains(500));
         System.out.println(list);
     }
     }
