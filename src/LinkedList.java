@@ -37,6 +37,9 @@ public class LinkedList {
     }
     // deleteLast
     // containsLast
+    public boolean contains(int item) {
+        return indexOf(item) != -1;
+    }
     // indexOf
     public int indexOf(int item) {
         int index = 0;
