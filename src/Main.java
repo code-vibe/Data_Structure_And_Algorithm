@@ -7,5 +7,6 @@ public class Main {
       list.addLast(12);
       list.addLast(15);
       list.addLast(25);
+        System.out.println(list.indexOf(25));
     }
     }
