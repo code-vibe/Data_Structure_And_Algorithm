@@ -42,9 +42,12 @@ public class LinkedList {
         int index = 0;
         var current = first;
         while (current != null){
-
+            if (current.value == item)
+                return index;
+            current = current.next;
+            index ++;
         }
-    return 0;
+        return (-1);
     }
     private boolean isEmpty() {
         return first == null;
