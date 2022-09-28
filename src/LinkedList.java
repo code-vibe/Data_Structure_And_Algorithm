@@ -34,9 +34,22 @@ public class LinkedList {
 
     }
     // deleteFirst
-    public void removeFirst(){
-        if(isEmpty())
+
+    /**
+     * Always check for edge case, here we checked if the linked list is emppty,
+     * if empty, it throws aa exception.
+     *  we accounted for the list having only one item.
+     *
+     *  We should always review our code, test it with various input
+     *  and think of various edge cases.
+     */
+    public void removeFirst() {
+        if (isEmpty())
             throw new NoSuchElementException();
+        if (first == last){
+            first = last = null;
+            return;
+        }
         var second = first.next;
         first.next = null;
         first = second;
