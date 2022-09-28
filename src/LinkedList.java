@@ -36,6 +36,12 @@ public class LinkedList {
 
     }
     // deleteLast
+    public void removeFirst(){
+        var second = first.next;
+        first.next = null;
+        first = second;
+
+    }
     // containsLast
     public boolean contains(int item) {
         return indexOf(item) != -1;
