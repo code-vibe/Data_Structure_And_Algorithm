@@ -55,6 +55,22 @@ public class LinkedList {
         first = second;
 
     }
+
+    //deleteLast
+    public void removeLast(){
+    var previous = getPrevious(last);
+    last = previous;
+    last.next = null;
+    }
+    private Node getPrevious(Node node) {
+        var current = first;
+        while (current != null) {
+            if(current.next == node)
+                return current;
+            current = current.next;
+        }
+        return null;
+    }
     // containsLast
     public boolean contains(int item) {
         return indexOf(item) != -1;
